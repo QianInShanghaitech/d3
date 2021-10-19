@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta character="utf-8">
+<html lang="en">
+
+
+<head>
+    <meta name="viewport" content="width=device-width" initial-scale=1.0 maximum-scale=1.0 user-scalable=0/>
+    <meta content="text/html" charset="utf-8"/>
+    <title>Monthly Temperature of Hong Kong</title>
+</head>
+
+<body>
+    <div id = "hs">
+        <h2 style="margin-left:200px">MAX temperature</h2>
+    </div>
+    <div id = "dataViz" style="height: 550px"></div>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="level_2.js"></script> 
+    
+    <svg class="chart" style="height: 30px; width:500px">
+        <defs>
+            <linearGradient id="gradient_1">
+                <stop offset="0%" stop-color="#FFFFDF"></stop>
+                <stop offset="100%" stop-color="#FFB400"></stop>
+            </linearGradient>
+            <linearGradient id="gradient_2">
+                <stop offset="0%" stop-color="#FFB400"></stop>
+                <stop offset="100%" stop-color="#FF3232"></stop>
+            </linearGradient>
+            <linearGradient id="gradient_3">
+                <stop offset="0%" stop-color="#FF3232"></stop>
+                <stop offset="100%" stop-color="#A01450"></stop>
+            </linearGradient>
+        </defs>
+        <rect x="100" y="10" height="20" width="105" style="fill: url(#gradient_1)"></rect>
+        <rect x="205" y="10" height="20" width="80" style="fill: url(#gradient_2)"></rect>
+        <rect x="285" y="10" height="20" width="60" style="fill: url(#gradient_3)"></rect>
+
+    </svg>
+    <p style="width:300px; margin-left:100px; margin-top:0px; margin-bottom:0px;">
+        3°C &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;38°C
+    </p>
+    <input type="button" value="SWITCH" onclick="mouseClick()" style="height:30px; margin-left:490px" />
+</body>
+
+</html>
