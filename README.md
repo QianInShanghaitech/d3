@@ -1,2 +1,2 @@
-# AI
-CS181
+# D3
+code training
